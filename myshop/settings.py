@@ -81,14 +81,15 @@ WSGI_APPLICATION = 'myshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# Database configuration
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('POSTGRES_DB'),
         'USER': config('POSTGRES_USER'),
         'PASSWORD': config('POSTGRES_PASSWORD'),
-        'HOST': config('DB_HOST', default='localhost'),
-        'PORT': 5432
+        'HOST': config('DB_HOST', '127.0.0.1'),
+        'PORT': config('DB_PORT', 5432),
     }
 }
 
