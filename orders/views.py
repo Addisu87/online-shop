@@ -1,13 +1,15 @@
 import weasyprint
+from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.staticfiles import finders
 from django.http import HttpResponse
-from django.template.loader import render_to_string
-from django.contrib.admin.views.decorators import staff_member_required
 from django.shortcuts import get_object_or_404, redirect, render
+from django.template.loader import render_to_string
+
 from cart.cart import Cart
 from .forms import OrderCreateForm
 from .models import Order, OrderItem
 from .tasks import order_created
+
 
 # To create order
 
@@ -20,8 +22,12 @@ def order_create(request):
             order = form.save()
             for item in cart:
                 OrderItem.objects.create(
-                    order=order, product=item['product'], price=item['price'], quantity=item['quantity'])
-           # clear the cart
+                    order=order,
+                    product=item['product'],
+                    price=item['price'],
+                    quantity=item['quantity'],
+                )
+            # clear the cart
             cart.clear()
             # launch asynchronous task
             order_created.delay(order.id)
@@ -32,7 +38,9 @@ def order_create(request):
     else:
         form = OrderCreateForm()
     return render(
-        request, 'orders/order/create.html', {'cart': cart, 'form': form}
+        request,
+        'orders/order/create.html',
+        {'cart': cart, 'form': form},
     )
 
 # create a custom view to display information about an order
@@ -41,7 +49,9 @@ def order_create(request):
 @staff_member_required
 def admin_order_detail(request, order_id):
     order = get_object_or_404(Order, id=order_id)
-    return render(request, 'admin/orders/order/detail.html', {'order': order})
+    return render(
+        request, 'admin/orders/order/detail.html', {'order': order}
+    )
 
 
 # to create a view to generate PDF invoices for existing orders
@@ -53,7 +63,6 @@ def admin_order_pdf(request, order_id):
     response['Content-Disposition'] = f'filename=order_{order.id}.pdf'
     weasyprint.HTML(string=html).write_pdf(
         response,
-        stylesheets=[weasyprint.CSS(finders.find('css/pdf.css'))]
+        stylesheets=[weasyprint.CSS(finders.find('css/pdf.css'))],
     )
-
     return response
