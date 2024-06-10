@@ -160,10 +160,6 @@ CART_SESSION_ID = 'cart'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-CELERY_BROKER_URL = config(
-    'CELERY_BROKER_URL', default='amqp://guest:guest@localhost:5672//')
-CELERY_RESULT_BACKEND = config('CELERY_RESULT_BACKEND', default='rpc://')
-
 # Stripe settings
 STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
