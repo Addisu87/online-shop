@@ -8,63 +8,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-10 11:41+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-06-11 09:50+0300\n"
+"PO-Revision-Date: 2024-06-11 07:16+0000\n"
+"Last-Translator:   <addisuhaile87@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: cart/forms.py:13 cart/templates/cart/detail.html:20
 #: orders/templates/orders/order/pdf.html:29
 #: payment/templates/payment/process.html:23
 msgid "Quantity"
-msgstr ""
+msgstr "Calidad"
 
 #: cart/templates/cart/detail.html:5 cart/templates/cart/detail.html:9
 msgid "Your shopping cart"
-msgstr ""
+msgstr "Tu carrito de la compra"
 
 #: cart/templates/cart/detail.html:14
 #: env/lib/python3.12/site-packages/django/db/models/fields/files.py:393
 #: payment/templates/payment/process.html:14
 msgid "Image"
-msgstr ""
+msgstr "Imagen"
 
-#: cart/templates/cart/detail.html:17 orders/templates/orders/order/pdf.html:23
+#: cart/templates/cart/detail.html:17
+#: orders/templates/orders/order/pdf.html:23
 #: payment/templates/payment/process.html:17
 msgid "Product"
-msgstr ""
+msgstr "Producto"
 
 #: cart/templates/cart/detail.html:23 cart/templates/cart/detail.html:57
 msgid "Remove"
-msgstr ""
+msgstr "Eliminar"
 
 #: cart/templates/cart/detail.html:26
 msgid "Unit price"
-msgstr ""
+msgstr "Precio unitario"
 
-#: cart/templates/cart/detail.html:29 orders/templates/orders/order/pdf.html:26
+#: cart/templates/cart/detail.html:29
+#: orders/templates/orders/order/pdf.html:26
 #: payment/templates/payment/process.html:20
 msgid "Price"
-msgstr ""
+msgstr "Precio"
 
 #: cart/templates/cart/detail.html:51
 msgid "Update"
-msgstr ""
+msgstr "Actualizar"
 
-#: cart/templates/cart/detail.html:70 orders/templates/orders/order/pdf.html:50
+#: cart/templates/cart/detail.html:70
+#: orders/templates/orders/order/pdf.html:50
 msgid "subtotal"
-msgstr ""
+msgstr "Total parcial"
 
-#: cart/templates/cart/detail.html:77 payment/templates/payment/process.html:57
+#: cart/templates/cart/detail.html:77
+#: payment/templates/payment/process.html:57
 #, python-format
 msgid "\"%(code)s\" coupon (%(discount)s%% off)"
-msgstr ""
+msgstr "Cupón \"%(code)s\" (%(discount)s%% de descuento)"
 
 #: cart/templates/cart/detail.html:86
 #: orders/templates/orders/order/create.html:27
@@ -72,48 +76,48 @@ msgstr ""
 #: payment/templates/payment/process.html:26
 #: payment/templates/payment/process.html:65
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: cart/templates/cart/detail.html:96
 #: shop/templates/shop/product/detail.html:27
 msgid "People who bought this also bought"
-msgstr ""
+msgstr "Las personas que compraron esto también compraron"
 
 #: cart/templates/cart/detail.html:115
 msgid "Apply a coupon"
-msgstr ""
+msgstr "Aplicar un cupón"
 
 #: cart/templates/cart/detail.html:119
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #: cart/templates/cart/detail.html:124
 msgid "Continue shopping"
-msgstr ""
+msgstr "Seguir comprando"
 
 #: cart/templates/cart/detail.html:125
 #: orders/templates/orders/order/create.html:5
 #: orders/templates/orders/order/create.html:9
 msgid "Checkout"
-msgstr ""
+msgstr "Verificar"
 
 #: coupons/forms.py:6
 msgid "Coupon"
-msgstr ""
+msgstr "Cupón"
 
 #: env/lib/python3.12/site-packages/click/_termui_impl.py:518
 #, python-brace-format
 msgid "{editor}: Editing failed"
-msgstr ""
+msgstr "{editor}: Error al editar"
 
 #: env/lib/python3.12/site-packages/click/_termui_impl.py:522
 #, python-brace-format
 msgid "{editor}: Editing failed: {e}"
-msgstr ""
+msgstr "{editor}: Error al editar: {e}"
 
 #: env/lib/python3.12/site-packages/click/core.py:1120
 msgid "Aborted!"
-msgstr ""
+msgstr "Abortada"
 
 #: env/lib/python3.12/site-packages/click/core.py:1309
 #: env/lib/python3.12/site-packages/click/decorators.py:559
@@ -440,8 +444,8 @@ msgstr ""
 
 #: env/lib/python3.12/site-packages/django/core/validators.py:267
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/core/validators.py:279
@@ -647,15 +651,15 @@ msgstr ""
 #: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1550
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1558
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1563
@@ -674,8 +678,8 @@ msgstr ""
 #: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1853
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1857
@@ -830,7 +834,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: env/lib/python3.12/site-packages/django/forms/boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -880,7 +885,8 @@ msgstr ""
 
 #: env/lib/python3.12/site-packages/django/forms/fields.py:633
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -987,7 +993,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/forms/models.py:1448
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/forms/models.py:1587
@@ -1466,10 +1473,10 @@ msgstr ""
 
 #: env/lib/python3.12/site-packages/django/views/csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1521,8 +1528,8 @@ msgstr ""
 #: env/lib/python3.12/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/views/generic/dates.py:692
@@ -1580,10 +1587,10 @@ msgstr ""
 #: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:229
@@ -1700,173 +1707,173 @@ msgstr ""
 #: env/lib/python3.12/site-packages/tornado/test/locale_test.py:69
 msgctxt "good"
 msgid "right"
-msgstr ""
+msgstr "Derecho"
 
 #: env/lib/python3.12/site-packages/tornado/test/locale_test.py:70
 #: env/lib/python3.12/site-packages/tornado/test/locale_test.py:72
 msgctxt "organization"
 msgid "club"
-msgstr ""
+msgstr "club"
 
 #: env/lib/python3.12/site-packages/tornado/test/locale_test.py:74
 #: env/lib/python3.12/site-packages/tornado/test/locale_test.py:75
 msgctxt "stick"
 msgid "club"
-msgstr ""
+msgstr "club"
 
 #: myshop/settings.py:127
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: myshop/settings.py:128
 msgid "Spanish"
-msgstr ""
+msgstr "Español"
 
 #: myshop/urls.py:27
 msgid "cart/"
-msgstr ""
+msgstr "carro/"
 
 #: myshop/urls.py:28
 msgid "orders/"
-msgstr ""
+msgstr "pedidos/"
 
 #: myshop/urls.py:29
 msgid "payment/"
-msgstr ""
+msgstr "pago/"
 
 #: myshop/urls.py:30
 msgid "coupons/"
-msgstr ""
+msgstr "cupones/"
 
 #: orders/models.py:11
 msgid "first name"
-msgstr ""
+msgstr "nombre de pila"
 
 #: orders/models.py:12
 msgid "last name"
-msgstr ""
+msgstr "apellido"
 
 #: orders/models.py:13
 msgid "e-mail"
-msgstr ""
+msgstr "correo electrónico"
 
 #: orders/models.py:14
 msgid "address"
-msgstr ""
+msgstr "DIRECCIÓN"
 
 #: orders/models.py:15
 msgid "postal code"
-msgstr ""
+msgstr "Código Postal"
 
 #: orders/models.py:16
 msgid "city"
-msgstr ""
+msgstr "ciudad"
 
 #: orders/templates/orders/order/create.html:11
 msgid "Your order"
-msgstr ""
+msgstr "Su pedido"
 
 #: orders/templates/orders/order/create.html:21
 #: orders/templates/orders/order/pdf.html:56
 #, python-format
 msgid "\"%(code)s\" (%(discount)s%% off)"
-msgstr ""
+msgstr "\"%(code)s\" (%(descuento)s%% de descuento)"
 
 #: orders/templates/orders/order/create.html:33
 msgid "Place order"
-msgstr ""
+msgstr "Realizar pedido"
 
 #: orders/templates/orders/order/pdf.html:5
 msgid "My Shop"
-msgstr ""
+msgstr "Mi tienda"
 
 #: orders/templates/orders/order/pdf.html:7
 msgid "Invoice no."
-msgstr ""
+msgstr "Factura no."
 
 #: orders/templates/orders/order/pdf.html:11
 msgid "Bill to"
-msgstr ""
+msgstr "Cobrar a"
 
 #: orders/templates/orders/order/pdf.html:18
 msgid "Items bought"
-msgstr ""
+msgstr "Artículos comprados"
 
 #: orders/templates/orders/order/pdf.html:32
 msgid "Cost"
-msgstr ""
+msgstr "Costo"
 
 #: orders/templates/orders/order/pdf.html:72
 msgid "Paid"
-msgstr ""
+msgstr "Pagado"
 
 #: orders/templates/orders/order/pdf.html:74
 msgid "Pending payment"
-msgstr ""
+msgstr "Pago pendiente"
 
 #: orders/urls.py:8
 msgid "create/"
-msgstr ""
+msgstr "crear/"
 
 #: payment/templates/payment/canceled.html:5
 msgid " Payment canceled"
-msgstr ""
+msgstr "Pago cancelado"
 
 #: payment/templates/payment/canceled.html:9
 msgid "Your payment has not been processed."
-msgstr ""
+msgstr "Su pago no ha sido procesado."
 
 #: payment/templates/payment/canceled.html:11
 msgid "There was a problem processing your payment."
-msgstr ""
+msgstr "Hubo un problema al procesar su pago."
 
 #: payment/templates/payment/completed.html:5
 msgid "Payment successful"
-msgstr ""
+msgstr "Pago exitoso"
 
 #: payment/templates/payment/completed.html:9
 msgid "Your payment was successful"
-msgstr ""
+msgstr "Su pago fue exitoso"
 
 #: payment/templates/payment/completed.html:11
 msgid "Your payment has been processed successfully."
-msgstr ""
+msgstr "Su pago ha sido procesado exitosamente."
 
 #: payment/templates/payment/process.html:5
 msgid "Pay your order"
-msgstr ""
+msgstr "Paga tu pedido"
 
 #: payment/templates/payment/process.html:9
 msgid "Order summary"
-msgstr ""
+msgstr "Resumen del pedido"
 
 #: payment/templates/payment/process.html:49
 msgid "Subotal"
-msgstr ""
+msgstr "Subota"
 
 #: payment/templates/payment/process.html:72
 msgid "Pay now"
-msgstr ""
+msgstr "Pagar ahora"
 
 #: payment/urls.py:9
 msgid "process/"
-msgstr ""
+msgstr "proceso/"
 
 #: payment/urls.py:10
 msgid "completed/"
-msgstr ""
+msgstr "terminado/"
 
 #: payment/urls.py:11
 msgid "canceled/"
-msgstr ""
+msgstr "cancelado"
 
 #: shop/templates/shop/base.html:9 shop/templates/shop/base.html:16
 msgid "My shop"
-msgstr ""
+msgstr "Mi tienda"
 
 #: shop/templates/shop/base.html:22
 msgid "Your cart"
-msgstr ""
+msgstr "Yu carrito"
 
 #: shop/templates/shop/base.html:24
 #, python-format
@@ -1879,25 +1886,29 @@ msgid_plural ""
 "              %(items)s items, $%(total)s\n"
 "              "
 msgstr[0] ""
+"\n"
+"%(artículos)s artículo, $%(total)s"
 msgstr[1] ""
+"\n"
+"%(artículos)s artículo, $%(total)s"
 
 #: shop/templates/shop/base.html:31
 msgid "Your cart is empty."
-msgstr ""
+msgstr "Tu carrito esta vacío."
 
 #: shop/templates/shop/product/detail.html:21
 msgid "Add to cart"
-msgstr ""
+msgstr "Añadir a la cesta"
 
 #: shop/templates/shop/product/list.html:6
 #: shop/templates/shop/product/list.html:26
 msgid "Products"
-msgstr ""
+msgstr "Productos"
 
 #: shop/templates/shop/product/list.html:12
 msgid "Categories"
-msgstr ""
+msgstr "Categorías"
 
 #: shop/templates/shop/product/list.html:15
 msgid "All"
-msgstr ""
+msgstr "Todo"
